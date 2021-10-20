@@ -1,0 +1,134 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body,
+button,
+input,
+textarea{
+    font-size: clamp(14px, 1.6rem, 2vw);
+    font-family: var(--textfont);
+}
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    max-width: 100vw;
+    background: var(--background);
+}
+/* Variables */
+:root{
+    /* Colors */
+    --black: #0D114F;
+    --blue: #3485FF;
+    --lightblue: #E0ECFF;    
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --read: #eaecf2;
+    /* Detail colors */
+    --background: #FBFCFF;
+    --overlay: #040911;
+    --icons-and-details: #A5B0C1;
+    /* Grey */
+    --grey: #4D5E77;
+    --blue-grey: #A1B2CD;
+    --medium-grey: #D3D9E2;
+    --light-grey: #E5EAF1;
+    /* Hover */
+    --hover-blue: #5699FF;
+    --hover-red: #EA4B65;
+    --hover-grey: #8794A7;
+    /* Fonts */
+    --titlefont: 'Poppins', sans-serif;
+    --textfont: 'Open Sans', sans-serif;
+    /* Font Size */
+    font-size: 62.5%;
+}
+
+/* Hide Label */
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* input and buttons */
+button,
+input,
+.button{
+    height: 5rem;
+    border-radius: .8rem;
+}
+
+/* Header */
+.content header{
+    width: 80%;
+    margin: 3.5rem auto;
+}
+
+.content header img{
+    width: 16.7rem;
+}
+
+/* Buttons */
+
+button,
+.button{
+    font-family: var(--titlefont);
+    font-weight: 500;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    transition: filter .4s;
+}
+
+button:hover,
+.button:hover{
+    filter: brightness(1.2);
+}
+
+button > i,
+.button > i{
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+button.outlined,
+.button.outlined{
+    background-color: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
+
+button.red,
+.button.red{
+    background: var(--red);
+    color: var(--white);
+}
+
+button.grey,
+.button.grey{
+    background: var(--light-grey);
+    color: var(--grey);
+}

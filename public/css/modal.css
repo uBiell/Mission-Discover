@@ -1,0 +1,60 @@
+.modal-wrapper.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-wrapper{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(4, 9, 17, .8);
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-wrapper .modal{
+    width: min(59rem, 90%);
+    background: var(--white);
+    margin: auto;
+    border-radius: .8rem;
+    font-family: var(--titlefont);
+    text-align: center;
+    padding: 6.4rem;
+}
+
+.buttons{
+    display: flex;
+    gap: .8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons > button,
+.buttons > .button{
+    padding: 1.3rem 3.2rem;
+}
+
+.modal h2{
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+    color: var(--black);
+}
+
+.modal p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 2.4rem;
+    color: var(--grey);
+}
+
+.modal form input#password{
+    margin-bottom: 4rem;
+    width: 30rem;
+    border: .2rem solid var(--blue);
+    padding: 1.3rem 1.6rem;
+    outline: none;
+}
