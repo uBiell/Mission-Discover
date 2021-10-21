@@ -25,7 +25,7 @@
             <a href=""><img src="images/logo.png" alt="Rocket.Q logo"></a>
 
             <div class="buttons">
-                <div class="button outlined">
+                <div class="button outlined" id="room-id" data-id="323243">
                     #323243
                     <img src="images/copy.svg" alt="Copiar numero da sala">
                 </div>
@@ -72,8 +72,8 @@
                         </div>
                         
                         <div class="actions">
-                            <a href="#" class="check"><i class="fas fa-check"></i>Marcar como lida</a>
-                            <a href="#" class="delete"><i class="far fa-trash-alt"></i>Excluir</a>
+                            <a href="#" class="check" data-id="2"><i class="fas fa-check"></i>Marcar como lida</a>
+                            <a href="#" class="delete" data-id="2"><i class="far fa-trash-alt"></i>Excluir</a>
                         </div>
                     </div>
 
@@ -89,8 +89,8 @@
                         </div>
                         
                         <div class="actions">
-                            <a href="#" class="check"><i class="fas fa-check"></i>Marcar como lida</a>
-                            <a href="#" class="delete"><i class="far fa-trash-alt"></i>Excluir</a>
+                            <a href="#" class="check" data-id="3"><i class="fas fa-check"></i>Marcar como lida</a>
+                            <a href="#" class="delete" data-id="3"><i class="far fa-trash-alt"></i>Excluir</a>
                         </div>
                     </div>
 
@@ -106,8 +106,8 @@
                         </div>
                         
                         <div class="actions">
-                            <a href="#" class="check"><i class="fas fa-check"></i>Marcar como lida</a>
-                            <a href="#" class="delete"><i class="far fa-trash-alt"></i>Excluir</a>
+                            <a href="#" class="check" data-id="4"><i class="fas fa-check"></i>Marcar como lida</a>
+                            <a href="#" class="delete" data-id="4"><i class="far fa-trash-alt"></i>Excluir</a>
                         </div>
                     </div>
 
@@ -123,8 +123,8 @@
                         </div>
                         
                         <div class="actions">
-                            <a href="#"><i class="fas fa-check"></i>Pergunta Lida</a>
-                            <a href="#" class="delete"><i class="far fa-trash-alt"></i>Excluir</a>
+                            <!-- <a href="#" ><i class="fas fa-check"></i>Pergunta Lida</a> -->
+                            <a href="#" class="delete" data-id="1"><i class="far fa-trash-alt"></i>Excluir</a>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
         <div class="modal">
             <h2>Excluir Pergunta</h2>
             <p>Tem certeza que você deseja excluir esta pergunta?</p>
-            <form action="">
+            <form action="#" method="POST">
                 <label for="password" class="sr-only">Digite a sua senha admin</label>
                 <input type="password" name="password" placeholder="Digite a sua senha" id="password">
 
