@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/room.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="scripts/main.js" defer type="module"></script>
+    <script src="https://kit.fontawesome.com/cfaedefc96.js" crossorigin="anonymous"></script>
+    <!-- Title -->
+    <title>Mission: Discover</title>
+</head>
+<body>
+    <div id="room" class="content">
+        <header class="logo">
+            <a href=""><img src="images/logo.png" alt="Rocket.Q logo"></a>
+
+            <div class="buttons">
+                <div class="button outlined">
+                    #323243
+                    <img src="images/copy.svg" alt="Copiar numero da sala">
+                </div>
+
+                <a href="#" class="button">
+                    <img src="images/users.svg" alt="Criar uma sala">
+                    Criar Sala
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section id="question-form">
+                <h2>Faça a sua pergunta</h2>
+
+                <form action="">
+                    <label for-id="question" class="sr-only">O que você quer perguntar?</label>
+                    <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
+                    
+                    <footer>
+                        <div class="anonymous">
+                            <i class="fas fa-lock"></i>
+                            <p>Esta pergunta é anônima</p>
+                        </div>
+
+                        <button>Enviar</button>
+                    </footer>
+                </form>
+            </section>
+
+            <section id="questions">
+                <h2 class="sr-only">Perguntas da comunidade</h2>
+                
+                <div class="questions">
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            
+                            <div class="question">
+                                <p>Qual a diferença entre const, var e let no JavaScript?</p>
+                            </div>
+                        </div>
+                        
+                        <div class="actions">
+                            <a href="#" class="check"><i class="fas fa-check"></i>Marcar como lida</a>
+                            <a href="#" class="delete"><i class="far fa-trash-alt"></i>Excluir</a>
+                        </div>
+                    </div>
+
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            
+                            <div class="question">
+                                <p>O que é TypeScript?</p>
+                            </div>
+                        </div>
+                        
+                        <div class="actions">
+                            <a href="#" class="check"><i class="fas fa-check"></i>Marcar como lida</a>
+                            <a href="#" class="delete"><i class="far fa-trash-alt"></i>Excluir</a>
+                        </div>
+                    </div>
+
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            
+                             <div class="question">
+                                <p></p>
+                            </div>
+                        </div>
+                        
+                        <div class="actions">
+                            <a href="#" class="check"><i class="fas fa-check"></i>Marcar como lida</a>
+                            <a href="#" class="delete"><i class="far fa-trash-alt"></i>Excluir</a>
+                        </div>
+                    </div>
+
+                    <div class="question-wrapper read">
+                        <div class="question-content">
+                            <div class="user">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            
+                            <div class="question">
+                                <p>O que é JavaScript?</p>
+                            </div>
+                        </div>
+                        
+                        <div class="actions">
+                            <a href="#"><i class="fas fa-check"></i>Pergunta Lida</a>
+                            <a href="#" class="delete"><i class="far fa-trash-alt"></i>Excluir</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Excluir Pergunta</h2>
+            <p>Tem certeza que você deseja excluir esta pergunta?</p>
+            <form action="">
+                <label for="password" class="sr-only">Digite a sua senha admin</label>
+                <input type="password" name="password" placeholder="Digite a sua senha" id="password">
+
+                <div class="buttons">
+                    <div class="button grey cancel">Cancelar</div>
+                    <button class="red">Sim, excluir</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

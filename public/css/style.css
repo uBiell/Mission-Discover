@@ -16,7 +16,7 @@ header{
 /* Background Image */
 #bg{
     grid-area: left;
-    background-image: url('/assets/img/ilustracao.png') ;
+    background-image: url('../images/ilustracao.png');
     background-position-x: -10rem;
     background-repeat: no-repeat;
     background-size: contain;
